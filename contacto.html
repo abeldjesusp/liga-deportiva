@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet"> -->
     <title>Contacto</title>
 </head>
 <body>
+    <div class="portada">
+        <header class="menu">
 
-    <div class="cover">
-        <header>
+            <a href="index.html" class="brand"><img src="img/logo-warriors.png" alt="Logo"></a>
+
             <nav>
-                <div>
-                    <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
-                </div>
+
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="allstar.html">All Star</a></li>
+                    <li><a href="allstar.html">All Star</a>
+                        <ul>
+                            <li> Stephen Curry </li>
+                            <li> Kevin Duran</li>
+                            <li> Daymond Green</li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <img src="img/cover.jpeg" alt="Cover">
+
         <div class="text-main">
-            <h1>Club Deportivo Golden State</h1>
+            <h1></h1>
+            <a href="contacto.html">Unete al club</a>
         </div>
+
     </div>
 
-    <main>
-        <h2>Ponte en contacto con nosotros para más información</h2>
+    <section class="equipo">
+        <h1>Información del jugador</h1>
         <form>
             <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
             <input type="email" name="correo" id="correo" placeholder="correo@tucorreo.com"><br>
             <input type="tel" name="telefono" id="telefono" placeholder="Teléfono"><br>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea><br>
-            <input type="submit" value="Enviar">
+            <a href="javascript:0;" class="bt-enviar" onclick="validarJugador()" >Enviar</a>
+
+            <h4 id="mensaje"></h4>
         </form>
-    </main>
-    
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

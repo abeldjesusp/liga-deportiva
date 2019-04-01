@@ -376,6 +376,34 @@ section.contacto{
     background-size: cover;
 }
 
+form{
+    margin: 80px auto;
+    width: 60%;
+}
+
+form input{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 5px;
+}
+
+form .bt-enviar{
+    width: 20%;
+    display: block;
+    padding: 10px 15px;
+    background: #f3d616;
+    border: 2px solid #a38e01;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+form #mensaje{
+    text-align: center;
+}
+
 footer{
     overflow: hidden;
     background: #3498db;

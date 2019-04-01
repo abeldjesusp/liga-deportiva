@@ -4,34 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Nosotros</title>
 </head>
 <body>
-    <div class="cover">
-        <header>
+    <div class="portada">
+        <header class="menu">
+
+            <a href="index.html" class="brand"><img src="img/logo-warriors.png" alt="Logo"></a>
+
             <nav>
-                <div>
-                    <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
-                </div>
+
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="allstar.html">All Star</a></li>
+                    <li><a href="allstar.html">All Star</a>
+                        <ul>
+                            <li> Stephen Curry </li>
+                            <li> Kevin Duran</li>
+                            <li> Daymond Green</li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <img src="img/cover.jpeg" alt="">
+
         <div class="text-main">
-            <h1>Club Deportivo Golden State</h1>
+            <h1></h1>
             <a href="contacto.html">Unete al club</a>
         </div>
-    </div>
+    
+        </div>
 
     <div class="main">
-        <h2>Sobre nosotros</h2>
+        <section class="promedio">
+            <form>
+                <input type="text" name="nombre" id="equipoNombre" placeholder="Nombre del equipo"><br>
+                <input type="text" name="correo" id="juegosGanados" placeholder="Juegos ganados"><br>
+                <input type="text" name="telefono" id="juegosPerdidos" placeholder="Juegos perdidos"><br>
+                <a href="javascript:0;" class="bt-enviar" onclick="calcularPromedio()" >Calcular</a>
+            </form>
+            <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nombre equipo</th>
+                        <th scope="col">Juegos ganados</th>
+                        <th scope="col">Juegos perdidos</th>
+                        <th scope="col">Promedio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Golden State</td>
+                        <td>40</td>
+                        <td>20</td>
+                        <td>0.8</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Heat</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>0.6</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td id="rowNombreEquipo"></td>
+                        <td id="rowjuegosGanados"></td>
+                        <td id="rowjuegosPerdidos"></td>
+                        <td id="rowPromedio"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <!-- <h2>Sobre nosotros</h2>
         <p>Conoce nuestra historia</p>
-        <dir>
+        <div>
             <div>
                 <img src="img/image05.jpeg" alt="">
             </div>
@@ -58,7 +109,8 @@
 
             </div>
             
-        </dir>
+        </div> -->
     </div>
 </body>
+<script src="js/script.js"></script>
 </html>
